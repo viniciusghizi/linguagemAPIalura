@@ -126,7 +126,7 @@ Repositório do projeto: [https://github.com/viniciusghizi/linguagemAPIalura](ht
 [instagram]:https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white
 [ig]:https://www.instagram.com/viniciusghizi/
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
-[linkedin-url]: www.linkedin.com/in/vinicius-ghizi-informatica/
+[linkedin-url]: http://www.linkedin.com/in/vinicius-ghizi-informatica/
   
 <!-- API Commands -->
 [get]:https://img.shields.io/badge/GET-2ea44f
