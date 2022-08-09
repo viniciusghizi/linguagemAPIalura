@@ -12,17 +12,13 @@
 
   <p align="center">
     Aqui você encontrará os diversos projetos que trabalho para desenvolvimento Backend em Java    <br />
-    <a href=""><strong>Explore a documentação»</strong></a>
+    <a href="https://linguagemapialura.herokuapp.com/swagger-ui.html"><strong>Explore a documentação»</strong></a>
     <br />
     <br />
-    <a href="https://linguagemapialura.herokuapp.com/linguagens">Minha API no Heroku</a>
+    <a href="https://linguagemapialura.herokuapp.com/swagger-ui.html">Minha API no Heroku</a>
     
-![dev]
- <!--    ·
-   <a href="https://github.com/github_username/repo_name/issues">Report Bug</a>
-    ·
-    <a href="https://github.com/github_username/repo_name/issues">Request Feature</a>
-  </p> -->
+![finish]
+
 </div>
 
 
@@ -95,7 +91,9 @@ Estou criando o Swagger para facilitar o uso e criar a documentação.
 - [X] Hospedagem na Cloud - Atualizado com todos os endpoints protegidos
 - [X] Validação de token por JWT ![new] - 08/08/22 - Aconselho a alterar a chave segredo - para alterar, basta alterar o application.properties
 - [X] Swagger ![new] - 09/08/22 - Adicionado Swagger e comentado todos os endpoints e seus retornos. Acesse: /swagger-ui.html
-- [X] Create logs ![new] - 08/08/22 - Cria a pasta no diretório C:\Temp\Logs e cria arquivos do tipo .log - para alterar, basta alterar o application.properties
+
+Features Adicionais
+- [X] Save logs ![new] - 08/08/22 - Cria a pasta no diretório(caso não exista) C:\Temp\Logs e cria arquivos do tipo .log - para alterar, basta alterar o application.properties
  
 
 
@@ -128,6 +126,7 @@ Repositório do projeto: [https://github.com/viniciusghizi/linguagemAPIalura](ht
 
 <!-- Project Status -->
 [dev]:https://camo.githubusercontent.com/18185202231435bc1c2003830758e4b9f1567a33602d9d5ed1c73a04f8a44348/687474703a2f2f696d672e736869656c64732e696f2f7374617469632f76313f6c6162656c3d535441545553266d6573736167653d454d253230444553454e564f4c56494d454e544f26636f6c6f723d475245454e267374796c653d666f722d7468652d6261646765
+[finish]:https://img.shields.io/badge/DESENVOLVIMENTO-COMPLETO-%23FFC387.svg?labelColor=585858&style=for-the-badge&logoColor=FFFFFF
 [new]:https://img.shields.io/badge/-NEW-Yellow
 
   
