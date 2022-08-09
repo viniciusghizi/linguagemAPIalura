@@ -33,6 +33,10 @@ import ghizi.java.repository.RoleRepository;
 import ghizi.java.repository.UserRepository;
 import ghizi.java.security.jwt.JwtUtils;
 import ghizi.java.security.services.UserDetailsImpl;
+import io.swagger.annotations.ApiOperation;
+import io.swagger.annotations.ApiResponse;
+import io.swagger.annotations.ApiResponses;
+import org.springframework.web.bind.annotation.RequestMethod;
 
 @CrossOrigin(origins = "*", maxAge = 3600)
 @RestController
@@ -50,6 +54,15 @@ public class AuthController {
     @Autowired
     JwtUtils jwtUtils;
 
+    @ApiOperation(value = "Endpoint para Criar um usuário no banco "
+            + "as Roles são: USER, MODERADOR, ADMIN")
+    @ApiResponses(value = {
+        @ApiResponse(code = 200, message = "Retorna o usuário logado e o Token de acesso"),})
+    @RequestMapping(
+            value = "/signin",
+            method = RequestMethod.POST,
+            consumes = {"application/json"},
+            produces = "application/json")
     @PostMapping("/signin")
     public ResponseEntity<?> authenticateUser(@Valid @RequestBody LoginRequest loginRequest) {
         Authentication authentication = authenticationManager.authenticate(
@@ -68,17 +81,28 @@ public class AuthController {
                 roles));
     }
 
+    @ApiOperation(value = "Endpoint para Criar um usuário no banco "
+            + "as Roles são: USER, MODERADOR, ADMIN")
+    @ApiResponses(value = {
+        @ApiResponse(code = 200, message = "Usuário cadastrado"),
+        @ApiResponse(code = 400, message = "Usuário ou email em uso"),
+        @ApiResponse(code = 500, message = "Foi gerada uma exceção"),})
+    @RequestMapping(
+            value = "/signup",
+            method = RequestMethod.POST,
+            consumes = {"application/json"},
+            produces = "application/json")
     @PostMapping("/signup")
     public ResponseEntity<?> registerUser(@Valid @RequestBody SignupRequest signUpRequest) {
         if (userRepository.existsByUsername(signUpRequest.getUsername())) {
             return ResponseEntity
                     .badRequest()
-                    .body(new MessageResponse("Error: Username is already taken!"));
+                    .body(new MessageResponse("Error: Username em uso!"));
         }
         if (userRepository.existsByEmail(signUpRequest.getEmail())) {
             return ResponseEntity
                     .badRequest()
-                    .body(new MessageResponse("Error: Email is already in use!"));
+                    .body(new MessageResponse("Error: Email em uso!"));
         }
         // Create new user's account
         User user = new User(signUpRequest.getUsername(),
@@ -112,6 +136,6 @@ public class AuthController {
         }
         user.setRoles(roles);
         userRepository.save(user);
-        return ResponseEntity.ok(new MessageResponse("User registered successfully!"));
+        return ResponseEntity.ok(new MessageResponse("Cadastrado com sucesso!"));
     }
 }

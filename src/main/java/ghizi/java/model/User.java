@@ -5,6 +5,7 @@
  */
 package ghizi.java.model;
 
+import io.swagger.annotations.ApiModelProperty;
 import java.util.HashSet;
 import java.util.Set;
 import javax.validation.constraints.Email;
@@ -34,6 +35,7 @@ public class User {
     @NotBlank
     @Size(max = 120)
     private String password;
+    @ApiModelProperty(value = "Permissões de usuário: USER, MODERATOR ou ADMIN")
     @DBRef
     private Set<Role> roles = new HashSet<>();
 
