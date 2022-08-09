@@ -5,15 +5,12 @@
  */
 package ghizi.java.repository;
 
-import ghizi.java.model.Linguagem;
-import org.springframework.context.annotation.Bean;
+import java.util.Optional;
 import org.springframework.data.mongodb.repository.MongoRepository;
+import ghizi.java.model.ERole;
+import ghizi.java.model.Role;
 
-/**
- *
- * @author ghizi
- */
+public interface RoleRepository extends MongoRepository<Role, String> {
 
-public interface LinguagemRepository extends MongoRepository<Linguagem, String>{
-    
+    Optional<Role> findByName(ERole name);
 }

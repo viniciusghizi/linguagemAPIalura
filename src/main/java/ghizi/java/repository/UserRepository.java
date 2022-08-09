@@ -5,15 +5,15 @@
  */
 package ghizi.java.repository;
 
-import ghizi.java.model.Linguagem;
-import org.springframework.context.annotation.Bean;
+import java.util.Optional;
 import org.springframework.data.mongodb.repository.MongoRepository;
+import ghizi.java.model.User;
 
-/**
- *
- * @author ghizi
- */
+public interface UserRepository extends MongoRepository<User, String> {
 
-public interface LinguagemRepository extends MongoRepository<Linguagem, String>{
-    
+    Optional<User> findByUsername(String username);
+
+    Boolean existsByUsername(String username);
+
+    Boolean existsByEmail(String email);
 }
