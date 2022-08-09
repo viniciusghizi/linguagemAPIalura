@@ -56,13 +56,13 @@
 
 
 API criada com o instuito de fazer a Imersão Alura e de aprendizado. Nesta API podemos, adicionar uma linguagem com nome, foto e ranking. Visualizar as linguagens que estão inseridas, deletar e até mesmo atualizar elas. 
-Alguns Endpoints para teste.
-![new] Você precisa criar uma conta no endpoint API/AUTH/SIGNUP e fazer login antes de executar qualquer ação na API.
+Alguns Endpoints para teste. <br/>
+Você precisa criar uma conta no endpoint API/AUTH/SIGNUP e fazer login antes de executar qualquer ação na API.
 
+#### ![new] https://linguagemapialura.herokuapp.com/swagger-ui.html ![documentacao]
+#### ![new] https://linguagemapialura.herokuapp.com/info ![get] | ![authorization-none] 
 #### ![new] https://linguagemapialura.herokuapp.com/api/auth/signup ![post] | [![json][json]][post-acc-ex] | ![authorization-none] 
-
-#### ![new] https://linguagemapialura.herokuapp.com/api/auth/signin ![post] | [![json][json]][post-login-ex] | ![authorization-none]
-  
+#### ![new] https://linguagemapialura.herokuapp.com/api/auth/signin ![post] | [![json][json]][post-login-ex] | ![authorization-none]  
 #### https://linguagemapialura.herokuapp.com/existe-linguagem-id ![get] | [![json][json]][get-example] | ![authorization-mod] ![authorization-admin]  
 #### https://linguagemapialura.herokuapp.com/linguagens ![get] | [![json][json]][list-get-example] | ![authorization-user] ![authorization-mod] ![authorization-admin]  
 #### https://linguagemapialura.herokuapp.com/delete-linguagem-id ![delete] | [![json][json]][delete-example] | ![authorization-mod] ![authorization-admin]  
@@ -94,7 +94,7 @@ Estou criando o Swagger para facilitar o uso e criar a documentação.
 - [X] CRUD
 - [X] Hospedagem na Cloud - Atualizado com todos os endpoints protegidos
 - [X] Validação de token por JWT ![new] - 08/08/22 - Aconselho a alterar a chave segredo - para alterar, basta alterar o application.properties
-- [ ] Swagger
+- [X] Swagger ![new] - 09/08/22 - Adicionado Swagger e comentado todos os endpoints e seus retornos. Acesse: /swagger-ui.html
 - [X] Create logs ![new] - 08/08/22 - Cria a pasta no diretório C:\Temp\Logs e cria arquivos do tipo .log - para alterar, basta alterar o application.properties
  
 
@@ -154,3 +154,4 @@ Repositório do projeto: [https://github.com/viniciusghizi/linguagemAPIalura](ht
 [authorization-user]:https://img.shields.io/badge/Authorization-USER-critical
 [authorization-mod]:https://img.shields.io/badge/Authorization-MOD-critical
 [authorization-admin]:https://img.shields.io/badge/Authorization-ADMIN-critical
+[documentacao]:https://img.shields.io/badge/-Documentation-red
