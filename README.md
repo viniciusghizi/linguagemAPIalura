@@ -1,59 +1,34 @@
-
-<div id="top"></div>
-
-<!-- PROJECT LOGO -->
-<br />
-<div align="center">
-  <a href="https://github.com/viniciusghizi">
-    <img src="https://viniciusghizi.files.wordpress.com/2022/07/industrias_timmerman_logo__5_-removebg-preview.png?w=500" alt="Minha Logo" width="80" height="80">
-  </a>
-
-<h3 align="center">👋 ##  Hello, I'm  Vinicius Ghizi  🍫 ##</h3>
-
-  <p align="center">
-    Aqui você encontrará os diversos projetos que trabalho para desenvolvimento Backend em Java    <br />
-    <a href="https://linguagemapialura.herokuapp.com/swagger-ui.html"><strong>Explore a documentação»</strong></a>
-    <br />
-    <br />
-    <a href="https://linguagemapialura.herokuapp.com/swagger-ui.html">Minha API no Heroku</a>
-    
+# Linguagem API Alura 
 ![finish]
 
-</div>
+> Its a Backend Java Spring boot application. In this project we has de CRUD of your favorite Programming language with name, photo and ranking. Authentication endpoints, Swagger and Logs. 
+
+### Usage Technologies
+
+![java] | ![mongo] | ![spring] | ![netbeans] | ![heroku] | ![vscode] | ![swagger] |  ![jwt]
+
+### Features
+
+The project is finished. I want to active Elasticsearch for Logs searching. This app is hosted on Heroku. 
+
+This project has been executed with the Imersão Java 1 - Alura schedule. In this scheduled we created only the CRUD. 
+Swagger and JWT Authentication has added by myself.
+
+![aula](https://www.alura.com.br/assets/img/imersao-java/imersao-java-share-img-02.1677857598.png)
+
+## 💻 Prereq.
+
+* You need to install `JAVA 17`.
 
 
+## 🚀 Installing <LinguagemAPI>
 
-<!-- TABLE OF CONTENTS -->
-<details>
-  <summary>Conteudos desse projeto</summary>
-  <ol>
-    <li>
-      <a href="#sobre-o-projeto">Sobre o projeto</a>
-      <ul>
-        <li><a href="#tecnologias">Tecnologias</a></li>
-      </ul>
-    </li>
-    <li>
-      <a href="#utilizando-a-api">Utilizando a API</a>
-       </li>
-    <li>
-      <a href="#roadmap">RoadMap</a> </li>
-    <li>
-      <a href="#contato">Contato</a> </li>
-    <li>
-      <a href="#outros-projetos">Outros Projetos</a>
-</details>
+Just Clone and run the application
 
+## ☕ Using <LinguagemAPIAlura>
 
+After start the backend, you can use this endpoints:
 
-<!-- ABOUT THE PROJECT -->
-## Sobre o projeto
-
-
-
-API criada com o instuito de fazer a Imersão Alura e de aprendizado. Nesta API podemos, adicionar uma linguagem com nome, foto e ranking. Visualizar as linguagens que estão inseridas, deletar e até mesmo atualizar elas. 
-Alguns Endpoints para teste. <br/>
-Você precisa criar uma conta no endpoint API/AUTH/SIGNUP e fazer login antes de executar qualquer ação na API.
 
 #### ![new] https://linguagemapialura.herokuapp.com/swagger-ui.html ![documentacao]
 #### ![new] https://linguagemapialura.herokuapp.com/info ![get] | ![authorization-none] 
@@ -64,57 +39,10 @@ Você precisa criar uma conta no endpoint API/AUTH/SIGNUP e fazer login antes de
 #### https://linguagemapialura.herokuapp.com/delete-linguagem-id ![delete] | [![json][json]][delete-example] | ![authorization-mod] ![authorization-admin]  
 #### https://linguagemapialura.herokuapp.com/atualizar/{id} ![patch] | [![json][json]][patch-example] | ![authorization-mod] ![authorization-admin]  
 #### https://linguagemapialura.herokuapp.com/add-linguagem ![post] | [![json][json]][post-example]  | ![authorization-mod] ![authorization-admin]  
-  
 
-
-
-
-### Tecnologias
-![java] | ![mongo] | ![spring] | ![netbeans] | ![heroku]
-
-<p align="right">(<a href="#top">back to top</a>)</p>
-
-
-
-<!-- GETTING STARTED -->
-## Utilizando a API
-
-Estou criando o Swagger para facilitar o uso e criar a documentação.
-
-
-<p align="right">(<a href="#top">back to top</a>)</p>
-
-<!-- ROADMAP -->
-## Roadmap
-
-- [X] CRUD
-- [X] Hospedagem na Cloud - Atualizado com todos os endpoints protegidos
-- [X] Validação de token por JWT ![new] - 08/08/22 - Aconselho a alterar a chave segredo - para alterar, basta alterar o application.properties
-- [X] Swagger ![new] - 09/08/22 - Adicionado Swagger e comentado todos os endpoints e seus retornos. Acesse: /swagger-ui.html
-
-Features Adicionais
-- [X] Save logs ![new] - 08/08/22 - Cria a pasta no diretório(caso não exista) C:\Temp\Logs e cria arquivos do tipo .log - para alterar, basta alterar o application.properties
- 
-
-
-<p align="right">(<a href="#top">back to top</a>)</p>
-
-
-<!-- CONTACT -->
-## Contato
-
-<p align="center"> <strong>Vinicius Ghizi </strong> </p> 
+## 📲 Contact me
 
 [![LinkedIn][linkedin-shield]][linkedin-url] | <a href="mailto:vinighizi@gmail.com"><img src="https://img.shields.io/badge/gmail-%23DD0031.svg?&style=for-the-badge&logo=gmail&logoColor=white"/></a> | [![instagram][instagram]][ig] 
-
-Repositório do projeto: [https://github.com/viniciusghizi/linguagemAPIalura](https://github.com/viniciusghizi/linguagemAPIalura)
-
-<!-- Others Projects-->
-## Outros Projetos
-
- - [Imersão Alura - consumidor desta API](https://github.com/viniciusghizi/imersaoAlura)
-
-<p align="right">(<a href="#top">back to top</a>)</p>
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- DEV TOOLS'N'FRAMEWORKS -->
@@ -123,10 +51,13 @@ Repositório do projeto: [https://github.com/viniciusghizi/linguagemAPIalura](ht
 [mongo]:https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white
 [spring]:https://img.shields.io/badge/Spring_Boot-F2F4F9?style=for-the-badge&logo=spring-boot
 [heroku]:https://img.shields.io/badge/Heroku-430098?style=for-the-badge&logo=heroku&logoColor=white
+[vscode]:https://img.shields.io/badge/Visual%20Studio%20Code-0078d7.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white
+[swagger]:https://img.shields.io/badge/-Swagger-%23Clojure?style=for-the-badge&logo=swagger&logoColor=white
+[jwt]:https://img.shields.io/badge/JWT-black?style=for-the-badge&logo=JSON%20web%20tokens
 
 <!-- Project Status -->
 [dev]:https://camo.githubusercontent.com/18185202231435bc1c2003830758e4b9f1567a33602d9d5ed1c73a04f8a44348/687474703a2f2f696d672e736869656c64732e696f2f7374617469632f76313f6c6162656c3d535441545553266d6573736167653d454d253230444553454e564f4c56494d454e544f26636f6c6f723d475245454e267374796c653d666f722d7468652d6261646765
-[finish]:https://img.shields.io/badge/DESENVOLVIMENTO-COMPLETO-%23FFC387.svg?labelColor=585858&style=for-the-badge&logoColor=FFFFFF
+[finish]:https://img.shields.io/badge/PROJECT-COMPLETE-%23FFC387.svg?labelColor=585858&style=for-the-badge&logoColor=FFFFFF
 [new]:https://img.shields.io/badge/-NEW-Yellow
 
   
